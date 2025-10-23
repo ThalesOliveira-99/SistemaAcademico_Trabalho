@@ -2,8 +2,24 @@ package Entidade;
 
 public class Aluno {
 	
-	//Criação dos atributos com a visibilidade publica. Onde os atributos receberão os valores em String
-	public String nome;
-	public String matricula;
+	//atributos com a visibilidade privada. Iniciado o encapsulamento
+	private String nome;
+	private String matricula;
+	
+	//criação dos métodos getters e setters
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+	
+	
 	
 }

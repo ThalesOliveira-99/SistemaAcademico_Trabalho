@@ -10,12 +10,13 @@ public class TesteSA {
 			//Criação do objeto Aluno
 			Aluno a1 = new Aluno();
 			
-			//Atribuição dos valores
-			a1.nome = "Thales";
-			a1.matricula = "123456";
+			//Atribuição dos valores usando método set
+			a1.setNome("Thales");
+			a1.setMatricula("12345-6");
 			
-			System.out.println("Nome:" + a1.nome);
-			System.out.println("Matricula: " + a1.matricula);
+			//Exibição dos valores usando método getter
+			System.out.println("Nome:" + a1.getNome());
+			System.out.println("Matricula: " + a1.getMatricula());
 		}
 
 }
