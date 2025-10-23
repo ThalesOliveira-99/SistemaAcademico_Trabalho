@@ -13,6 +13,9 @@ public class TesteSA {
 			//Atribuição dos valores
 			a1.nome = "Thales";
 			a1.matricula = "123456";
+			
+			System.out.println("Nome:" + a1.nome);
+			System.out.println("Matricula: " + a1.matricula);
 		}
 
 }
