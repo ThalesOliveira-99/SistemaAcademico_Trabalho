@@ -1,11 +1,12 @@
 package Entidade;
 
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa implements Avaliado {
 
 	private String matricula;
 	private String curso;
-	
-	//Construtor padrão. Será obrigado a inicializar o objeto passando os argumentos.
+
+	// Construtor padrão. Será obrigado a inicializar o objeto passando os
+	// argumentos.
 	public Aluno(String nome, String matricula, String curso) {
 		super(nome);
 		this.matricula = matricula;
@@ -35,5 +36,10 @@ public class Aluno extends Pessoa {
 		System.out.println("Meu curso: " + this.getCurso());
 		System.out.println();
 	}
-
+	
+	//Método da interface Avaliado e retornando a mensagem personalizada
+	public void avaliarDesempenho() {
+		System.out.println("Aluno " + this.getNome() + " obteve um bom desempenho!" );
+		System.out.println();
+	}
 }
