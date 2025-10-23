@@ -1,23 +1,23 @@
 package Entidade;
 
-public class Aluno {
+public class Aluno extends Pessoa{
 	
-	//atributos com a visibilidade privada. Iniciado o encapsulamento
-	private String nome;
+	
 	private String matricula;
+	private String curso;
 	
-	//criação dos métodos getters e setters
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	
 	public String getMatricula() {
 		return matricula;
 	}
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
+	}
+	public String getCurso() {
+		return curso;
+	}
+	public void setCurso(String curso) {
+		this.curso = curso;
 	}
 	
 	
