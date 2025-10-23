@@ -12,5 +12,7 @@ public class Pessoa {
 		this.nome = nome;
 	}
 	
-	
+	public void apresentar() {
+		System.out.println("Apresentação !!!");
+	}
 }

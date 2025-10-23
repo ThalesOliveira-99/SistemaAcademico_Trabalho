@@ -8,25 +8,16 @@ public class TesteSA {
 	
 		public static void main(String[] args) {
 			
-			//Criação do objeto Aluno
 			Aluno a1 = new Aluno();
-			
-			//Atribuição dos valores usando método set
-			a1.setNome("Thales");
-			a1.setMatricula("12345-6");
-			a1.setCurso("POO");
-			
-			//Exibição dos valores usando método getter
-			System.out.println("Nome:" + a1.getNome());
-			System.out.println("Matricula: " + a1.getMatricula());
-			System.out.println("Curso: "+ a1.getCurso());
+			a1.setNome("Thales Oliveira ");
+			a1.setMatricula("24082426-5");
+			a1.setCurso("Programação Orientada a Objeto - POO");
+			a1.apresentar(); // Executa o método da subclasse Aluno
 			
 			Professor p1 = new Professor();
 			p1.setNome("Juan");
-			p1.setDisciplina("Linguagem de Programção - PHP");
-			System.out.println();
-			System.out.println("Professor: " + p1.getNome());
-			System.out.println("Disciplina: " + p1.getDisciplina());
+			p1.setDisciplina("Linguagem de Prog. - PHP");
+			p1.apresentar(); // Executa o método da subclasse Professor
 		}
 
 }

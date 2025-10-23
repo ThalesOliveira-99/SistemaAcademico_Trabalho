@@ -12,4 +12,10 @@ public class Professor extends Pessoa{
 		Disciplina = disciplina;
 	}
 	
+	@Override // Pois o método está sobrescrevendo o método da Classe Pessoa(Classe Pai)
+	public void apresentar() {
+		System.out.println("Olá! Sou professor: " + this.getNome());
+		System.out.println("Disciplina: " + this.getDisciplina());
+	}
+	
 }
