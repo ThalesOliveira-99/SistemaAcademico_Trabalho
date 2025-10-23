@@ -4,6 +4,13 @@ public class Aluno extends Pessoa {
 
 	private String matricula;
 	private String curso;
+	
+	//Construtor padrão. Será obrigado a inicializar o objeto passando os argumentos.
+	public Aluno(String nome, String matricula, String curso) {
+		super(nome);
+		this.matricula = matricula;
+		this.curso = curso;
+	}
 
 	public String getMatricula() {
 		return matricula;
@@ -26,6 +33,7 @@ public class Aluno extends Pessoa {
 		System.out.println("Olá! Sou aluno: " + this.getNome());
 		System.out.println("Minha matricula: " + this.getMatricula());
 		System.out.println("Meu curso: " + this.getCurso());
+		System.out.println();
 	}
 
 }
