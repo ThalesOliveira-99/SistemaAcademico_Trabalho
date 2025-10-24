@@ -1,0 +1,67 @@
+# 🎓 Sistema Acadêmico POO em Java
+
+## 🚀 1. Visão Geral do Projeto
+Este projeto visa aplicar os pilares da **Programação Orientada a Objetos (POO)** em **Java**, modelando entidades acadêmicas como **Aluno** e **Professor**, e utilizando conceitos de **Herança**, **Abstração** e **Interfaces**.
+
+---
+
+## 📚 2. Etapas Concluídas e Conceitos POO Aplicados
+
+### 🧩 Etapa 1: Classe e Objeto (Base)
+- Criação da classe `Aluno`.
+- Instanciação de objetos no `main` (na classe `TesteSA`).
+
+### 🔒 Etapa 2: Encapsulamento
+- Implementação de atributos `private` nas classes (`Aluno`, `Pessoa`).
+- Criação de **Getters** e **Setters** para controlar o acesso e a modificação dos dados.
+- Demonstração de alteração e leitura de dados usando Setters e Getters no bloco de teste.
+
+### 🧬 Etapa 3: Herança e Abstração
+- Criação da superclasse `Pessoa` com atributos comuns (ex: `nome`).
+- Implementação da herança: `Aluno extends Pessoa` e `Professor extends Pessoa`.
+- Adição de atributos específicos (ex: `curso` em `Aluno`, `disciplina` em `Professor`).
+
+### 🔁 Etapa 4: Polimorfismo via Interface
+- Criação da interface `Avaliado` definindo o contrato `avaliarDesempenho()`.
+- A classe `Aluno` implementa `Avaliado`, fornecendo sua lógica de desempenho personalizada.
+- Invocação do método polimórfico no bloco de teste.
+
+---
+
+## 🚧 3. Desafios e Pontos de Atenção
+
+- **Sobrescrita de Métodos:** A transição do corpo do método para a classe que implementa (`Aluno`) foi inicialmente um ponto de confusão na interface.  
+- **Controle de Construtores:** A decisão de manter ou adicionar construtores vazios para permitir manipulação de dados via Setters na classe de teste.  
+- **Organização do Projeto:** A separação do método `main` da entidade (`Aluno`) para uma classe de teste independente (`TesteSA`) melhorou a estrutura do código.
+
+---
+
+## 💻 4. Como Rodar o Projeto
+
+### 🧱 Pré-requisitos
+- **Java JDK** instalado (versão 8 ou superior).
+
+### 🗂 Estrutura de Pacotes
+O projeto deve estar organizado da seguinte forma:
+
+src/
+├── Entidade/
+│ ├── Pessoa.java
+│ ├── Aluno.java
+│ └── Professor.java
+├── Interfaces/
+│ └── Avaliado.java
+└── Configuracao/
+└── TesteSA.java
+
+
+### ▶️ Execução
+1. Compile o projeto:
+   ```bash
+   javac src/**/*.java
+
+java Configuracao.TesteSA
+
+📘 Autor: Thales Oliveira da Silva
+📅 Última atualização: Outubro de 2025
+🧠 Conceitos principais: Classes, Objetos, Encapsulamento, Herança, Abstração, Polimorfismo, Interfaces.
